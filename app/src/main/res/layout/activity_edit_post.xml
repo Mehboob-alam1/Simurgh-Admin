@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPostActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppins_bold"
+        android:maxLines="2"
+        android:padding="5dp"
+        android:text="Edit the content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_back"
+        android:ellipsize="end"
+        android:ems="10"
+
+
+        android:hint="Title"
+
+
+        android:maxEms="1"
+        android:maxLines="1"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/etDesc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_back"
+        android:ellipsize="end"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:hint="Description"
+
+        android:maxEms="10"
+        android:maxLines="60"
+        android:padding="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:contentDescription="Selected Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_add_a_photo_24" />
+
+
+
+    <Button
+        android:id="@+id/btnAddPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Save Post" />
+</LinearLayout>
